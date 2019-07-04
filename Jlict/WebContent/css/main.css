@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+*{margin: 0 0;padding: 0 0;list-style:none;}
+ #header{width: 100%;height: 20%;background: #0404B4; }
+#inner{width: 100%;height: 80%;}
+#inner_left{width: 20%;height: 550px;;background-color: #8080ff;float: left;}
+#inner_right{width: 75%;height: 100%;background-color: white;float: right;}
+#header_logo{width: 100px;height: 100px;float: left;margin-left: 20px;}
+#header_title{font-size: 30px;color: white;margin-left: 150px;padding-top: 15px;}
+#header_title_E{font-size: 18px;padding-top: 8px;color:white;padding-bottom: 20px;margin-left: 150px;} 
+#header_img{width: 80px;height: 80px;float: right;margin-right: 200px;margin-top: -90px;}
+#header_name{font-size: 30px;color: white;float: right;margin-right: 100px;margin-top: -50px;}
+#inner_left>ul{font-size: 30px;float: left;margin-top: 20px;}
+#inner_left>ul>li{font-size: 30px;margin-top: 30px;padding-left: 50px;color: white;}
+#one_menu{float: left;margin-top: 8px; width: 110px;height: 40px;margin-left: 50px;}
+#two_menu{float: left;margin-top: 15px; width: 110px;height: 40px;margin-left: 50px;}
+#add{float: left;width: 80px;height: 40px;text-align: center;margin-left: 60px;margin-top: 30px;}

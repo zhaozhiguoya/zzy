@@ -1,0 +1,210 @@
+@CHARSET "UTF-8";
+section  .dirbox{
+	/* width:100%; */
+	height:28px;
+	padding-top:20px;
+	padding-left:15px;
+	color: #778899;
+	border-bottom:1px solid lightgray;
+}
+/*主页面  表格外框*/
+section .tablebox{
+/* 	width:100%; */
+ 	height:500px; 
+ 	 overflow-y:auto; 
+ 	 overflow-x: hidden;
+}
+/*主页面  表格*/
+section table{
+	border:1px solid #DBDBDB;
+	margin-left:50px;
+	text-align: center;
+	border-collapse:separate;
+	border-radius:5px;
+	float:left; 
+}
+/*主页面  表格  行*/
+section table tr{
+	height: 34px;
+	min-height: 34px;
+}
+
+/*主页面  表格 单元格*/
+section table tr td{
+	padding-top:10px;
+	border-bottom:1px solid #DBDBDB;
+	padding-bottom:10px; 
+
+}
+/*主页面  表格 上方仿按钮*/
+section  .findbox div[class]{
+	width:70px;
+	height:25px;
+	border:none;
+	border-radius:5px;
+	color:white;
+	margin-left:10px;
+	float:left;
+	text-align:center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+/*主页面  表格 上方仿按钮--增加*/
+section .findbox .btn-add{
+		background-color:green;
+}
+/*主页面  表格 上方搜索框*/
+section  .findbox input[type=text]{
+	float:left;
+	margin-left:180px;
+	border-radius:5px;
+	width:250px;
+	height:30px;
+	border:1px solid gray;
+	list-style:none;
+	outline:medium;
+	padding-left:10px;
+	position: relative;
+	top:0;
+	right:150px;
+	color:#C7C7C7;
+	}	/*主页面  表格 上方搜索按钮*/
+section  .findbox input[type=submit]{
+	float:left;
+	width:25px;
+	height:25px;
+	background:url('../img/find.png') no-repeat;  
+	background-size:100%;
+	position: relative;
+	top:5px;
+	margin-left:-140px;
+}
+/*表头*/
+.tabletitle{
+	background:#EAEAEA;
+    height:40px;
+    font-weight:bold;
+}
+/*表格单双行*/
+.tablesingle{
+	background-color:#F7F7F7;
+}
+/*单击增加按钮 弹出层*/
+section .alertDiv ,section .alertCheck{
+	width:100%;
+	height:100%;
+	background:black;
+	position:absolute;
+    top:0;
+    left:0;
+    /*此层透明,子层不透明*/
+  background-color: rgba(0,0,0,0.5)!important;
+  background-color: #000;
+  filter:Alpha(opacity=50);
+  display: none;
+}
+/*单击增加按钮 弹出层---form框*/
+section  .alertDiv-add ,section  .alertCheck-add{
+	width:500px;
+	height:300px;
+	position:absolute;
+    top:20%;
+    left:30%; 
+    background-color: #F7F7F7;
+    border-radius:10px;
+    padding-top:50px;
+    padding-left:60px;
+    
+}
+/*增加对话框中文本框和密码框*/
+section  .alertDiv-add input[placeholder],section  .alertCheck-add input[placeholder]{
+	width:60%;
+	height:35px;
+	border-radius:5px;
+	margin-bottom:25px;
+	padding-left:10px;
+}
+/*增加对话框中单选按钮*/
+section  .alertDiv-add input[type=radio],section  .alertCheck-add input[type=radio]{
+	height:15px;
+	margin-bottom:30px;
+	margin-top:-10px;
+	font-size:12px;
+	margin-left:20px; 
+	}
+	
+/*增加对话框中单选按钮中文字*/
+section  .alertDiv-add .rs,section  .alertCheck-add .rs{
+	color:#808080;
+	}
+
+section  .alertDiv-add span{
+  margin-left:10px;
+  color:red;
+	}
+	/*增加对话框中提交按钮*/
+section  .alertDiv-add .btn ,section  .alertCheck-add .btn{
+	width:100px;
+	height:40px;
+	border-radius:5px;
+	border:none;
+	background:#7EC0EE;
+	color:#EAEAEA;
+	font-size: 16px;
+	margin-right:50px;
+}
+/*增加对话框中提交按钮 鼠标移入*/
+section  .alertDiv-add .btn:hover,section  .alertCheck-add .btn:hover{
+	background:#87CEEB;
+	color:#F0F8FF;
+}
+/*增加对话框中关闭按钮*/
+section  .alertDiv-add .hid,section  .alertCheck-add .hid{
+	color:#CFCFCF;
+	font-size:20px;
+	font-weight: bold;
+	position: absolute;
+	top:5px;
+	right:8px;
+	cursor: pointer;
+}
+/*表格中操作列 两个按钮*/
+section table tr td div{
+	width:45px;
+	height:18px;
+	float: right;
+	cursor: pointer;
+	border:none;
+	border-radius:5px;
+	color:white;
+	margin-top:-4px;
+	margin-right:20px;
+	margin-bottom:-2px;
+	text-align:center;
+	font-size: 12px;
+	padding:6px 5px 0px 5px;
+	text-align: right;
+}
+/*表格中操作列 两个按钮 中的图片*/
+section table tr td div img{
+	width:15px;
+	height:15px;
+	float:left;
+	margin-top:-2px;
+}
+
+section table tr td div a{
+	 text-decoration: none;
+	 color:white;
+}
+/* 删除按钮 */
+section table tr td .btn-delete{
+	background:#CD3333;
+}
+/* 编辑按钮 */
+section table tr td .btn-edit{
+	background:#FFA500;
+}
+section table tr td .btn-check{
+	background:#008400;
+}
